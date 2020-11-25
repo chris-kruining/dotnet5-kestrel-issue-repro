@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    
+    <style>
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<iframe src="https://site.fyn.software"></iframe>
+
+<script type="module">
+    window.chrome.webview.addEventListener('message', e => console.log(e));
+
+    window.chrome.webview.postMessage('Dash is awesome');
+</script>
+</body>
+</html>
